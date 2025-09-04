@@ -8,7 +8,7 @@ from fastapi.responses import JSONResponse
 from ultralytics import YOLO
 
 APP_TITLE = "YOLOv11x-pose FastAPI Server"
-YOLO_WEIGHTS = os.getenv("YOLO_WEIGHTS", "yolo11x-pose.pt")
+YOLO_WEIGHTS = os.getenv("YOLO_WEIGHTS", "yolo11n-pose.pt")
 YOLO_DEVICE  = os.getenv("YOLO_DEVICE",  None)   # None -> auto
 IMG_SIZE     = int(os.getenv("YOLO_IMG_SIZE", "640"))
 CONF_THRESH  = float(os.getenv("YOLO_CONF", "0.25"))
